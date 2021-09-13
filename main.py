@@ -15,12 +15,12 @@ class Board:
 
 class Players:
     n = 2 # 2 players
-    which_player = 1 # 1 for player 1, 2 for player 2.
+    current_player = 1 # 1 for player 1, 2 for player 2.
 
     def next_player(self):
         """Switches players"""
 
-        if self.which_player == 1:
-            self.which_player = 2
+        if self.current_player == 1:
+            self.current_player = 2
         else:
-            self.which_player = 1
+            self.current_player = 1
