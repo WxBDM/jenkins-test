@@ -1,7 +1,9 @@
 
 class Board:
-    width = 3
-    height = 3
+    
+    def __init__(self):
+        self.width = 3
+        self.height = 3
 
     def __init__(self):
         """Instantiates a board object."""
