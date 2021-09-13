@@ -1,14 +1,12 @@
 
 class Board:
-    
-    def __init__(self):
-        self.width = 3
-        self.height = 3
+    width = 3
+    height = 3
 
     def __init__(self):
         """Instantiates a board object."""
         # 0 is empty, 1 is player 1, 2 is player 2.
-        self._board = [0] * (width * height)
+        self._board = [0] * (self.width * self.height)
 
     def _check_if_board_is_empty(self):
         if 0 in self._board:
