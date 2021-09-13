@@ -87,7 +87,7 @@ class TestMain(unittest.TestCase):
 
     def test_diagonal_1_is_winner(self):
         """Forces forward diagonal as a winner"""
-        self.board._board[0], self.board._board[4], self.board._board[8] = 1, 1, 1
+        self.board._board[0], self.board._board[4], self.board._board[8] = 2, 2, 2
         self.assertTrue(self.board._check_for_diagonal_win())
 
     def test_diagonal_2_is_winner(self):
