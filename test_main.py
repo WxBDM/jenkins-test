@@ -14,6 +14,9 @@ class TestMain(unittest.TestCase):
     def test_2_players(self):
         self.assertEqual(self.players.n, 2)
 
+    def test_this_will_fail(self):
+        self.assertEqual(2, 3)
+
 
 if __name__ == "__main__":
     unittest.main()
