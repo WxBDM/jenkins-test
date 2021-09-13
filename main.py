@@ -3,6 +3,11 @@ class Board:
     width = 3
     height = 3
 
+    # Board Index
+    # 0 | 1 | 2
+    # 3 | 4 | 5
+    # 6 | 7 | 8
+
     def __init__(self):
         """Instantiates a board object."""
         # 0 is empty, 1 is player 1, 2 is player 2.
@@ -12,6 +17,15 @@ class Board:
         if 0 in self._board:
             return False
         return True
+
+    def _check_for_diagonal_win(self):
+        pass
+
+    def _check_for_horizontal_win(self):
+        pass
+
+    def _check_for_vertical_win(self):
+        pass
 
 class Players:
     n = 2 # 2 players
